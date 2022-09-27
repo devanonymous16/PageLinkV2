@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Cores*/
+:root{
+    --cor-primaria-botao: rgb(0, 0, 0);
+    --cor-hover-botao:#404040;
+    --cor-sedundaria-botao: rgb(255, 255, 255);
+}
+
+/* Reset do css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+/* Estilização do corpo do projeto*/
+body{
+    background-color: #dedede;   
+}
+
+/* Estilização da logo-imagem*/
+.btn-links img{
+    width: 180px;
+    height: 180px;
+    border: solid 11px black;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+
+/* Estilização do título/nome-do-usuário*/
+.btn-links h1{
+    color: black;
+    font-size: 38px;
+}
+
+/* Estilização do botão*/
+.btn-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    background-color:white;
+    margin: 200px auto;
+    gap: 6.51px;
+    border-radius: 15px;
+    min-width: 38vw;
+    min-height: 38vh;
+}
+
+/* Estilização dos botões*/
+.btn-links a{
+    background-color: var(--cor-primaria-botao);
+    color: var(--cor-sedundaria-botao);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    padding: 1px;
+    border: solid 2px black;
+    text-align: center;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 22px;
+}
+
+/* Animação do click nos botões*/
+.btn-links a:hover{
+    background-color:var(--cor-hover-botao);
+}
+.btn-links a:active{
+    color:black;
+    background-color:var(--cor-sedundaria-botao);
+}
+
+/* nome no rodapé*/
+.name-bar{
+    color: black;
+    font-size: 12px;
+}
